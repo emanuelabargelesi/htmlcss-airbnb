@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  margin: 30px 30px;
+}
+
+.sfondo {
+  width: 100vh;
+  height: 100vh;
+  margin-bottom: 20px;
+}
+
+/* *******PRIMO MODO DI SCURIRE IL BACKGROUND ******* */
+.amsterdam {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/amsterdam.jpg);
+  width: 100%;
+  background-size: cover;
+}
+
+/* *******SECONDO MODO DI SCURIRE IL BACKGROUND ******* */
+.venice {
+  background: rgba(0, 0, 0, .45) url(img/venice.jpg);
+  background-blend-mode: darken;
+  width: 100%;
+  background-size: cover;
+}
+
+.paris {
+  background: rgba(0, 0, 0, .45) url(img/paris.jpg);
+  background-blend-mode: darken;
+  width: 100%;
+  background-size: cover;
+}
+
+/* *** ho usato questo metodo poiché volendo usare una classe con il transform:translate
+mi si sovrapponevano al centro del primo div, sarebbe bastato mettere tre ID invece di una classe
+per usare il transform:translare ma penso sia meno pratico a questo punto (????)****/
+.testouno {
+  color: #D5D8DB;
+  text-transform: uppercase;
+  font-size: 80px;
+  text-shadow: 2px 2px #000000;
+  text-align: center;
+  padding-top: 25%;
+}
